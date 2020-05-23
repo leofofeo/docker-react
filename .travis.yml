@@ -12,14 +12,14 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "docker-react"
-    env: "DockerReact-env"
+    app: "docker-course"
+    env: "DockerCourse-env"
     bucket_name: "elasticbeanstalk-us-east-2-094067287546"
-    bucket_path: "docker-react"
+    bucket_path: "docker-course"
     on:
         branch: master
     # access key and secret key are stored in travis
     access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+    secret_access_key: "$AWS_SECRET_KEY"
 
 
